@@ -1,4 +1,4 @@
-import { View, Text, SafeAreaView, StatusBar, Image, TouchableOpacity, Dimensions, ScrollView, ImageBackground } from 'react-native'
+import { View, Text, SafeAreaView, StatusBar, Image, TouchableOpacity, Dimensions, ScrollView, ImageBackground, Linking } from 'react-native'
 import React, { useEffect, useState, version } from 'react'
 import ProfileEdit from '../../constantComponent/ProfileEdit';
 import Language from '../../constantComponent/Language';
