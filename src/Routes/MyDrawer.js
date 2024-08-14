@@ -46,6 +46,10 @@ const MyDrawer = ({ navigation }) => {
             <Image style={{ resizeMode: 'contain', height: 30, width: 30, tintColor: '#FFF' }} source={require('../Images/rezeetImg/customer-support.png')} />
             <Text style={{ marginLeft: 15, fontSize: 18, fontWeight: '700', color: '#FFF' }}>Support</Text>
           </TouchableOpacity>
+          <TouchableOpacity style={{ flexDirection: 'row', marginTop: 20, alignItems: 'center' }} onPress={() => navigation.navigate('About')}>
+            <Image style={{ resizeMode: 'contain', height: 30, width: 30, tintColor: '#FFF' }} source={require('../Images/rezeetImg/customer-support.png')} />
+            <Text style={{ marginLeft: 15, fontSize: 18, fontWeight: '700', color: '#FFF' }}>About Us</Text>
+          </TouchableOpacity>
           <TouchableOpacity style={{ flexDirection: 'row', marginTop: 20, alignItems: 'center' }} onPress={() => navigation.navigate('Term_Condition')}>
             <Image style={{ resizeMode: 'contain', height: 30, width: 30, tintColor: '#FFF' }} source={require('../Images/rezeetImg/term.png')} />
             <Text style={{ marginLeft: 15, fontSize: 18, fontWeight: '700', color: '#FFF' }}>Terms & Conditions</Text>

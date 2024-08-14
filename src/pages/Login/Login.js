@@ -55,7 +55,7 @@ const Login = ({ navigation }) => {
     }
 
     if (!isPasswordValid(password)) {
-      setPasswordError("Password must be at least 6 characters long.");
+      setPasswordError("Password must be at least 4 characters long.");
       isValid = false;
     }
 

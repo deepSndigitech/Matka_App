@@ -3110,7 +3110,6 @@ drawable src_images_rezeetimg_customersupport
 drawable src_images_rezeetimg_hide
 drawable src_images_rezeetimg_left_arrow
 drawable src_images_rezeetimg_logout
-drawable src_images_rezeetimg_mail
 drawable src_images_rezeetimg_matka
 drawable src_images_rezeetimg_matka2
 drawable src_images_rezeetimg_profile

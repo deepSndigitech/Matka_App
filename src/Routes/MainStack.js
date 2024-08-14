@@ -5,6 +5,7 @@ import Profile from '../pages/Profile/Profile';
 import Support from '../pages/Support/Support';
 import Term_Condition from '../pages/Term_Condition/Term_Condition';
 import Privacy_Policy from '../pages/privacy_Policy/Privacy_Policy';
+import About from '../pages/About/About';
 
 export default function (Stack) {
     return (
@@ -34,6 +35,11 @@ export default function (Stack) {
             <Stack.Screen
                 name="Privacy_Policy"
                 component={Privacy_Policy}
+                options={{ headerShown: false }}
+            />
+             <Stack.Screen
+                name="About"
+                component={About}
                 options={{ headerShown: false }}
             />
         </>

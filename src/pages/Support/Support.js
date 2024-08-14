@@ -16,7 +16,7 @@ const Support = (props) => {
 
   const datas = ["satta matka", "online matka", "online matka app", "satta matta matka", "matka satta", "matka app", "online satta app", "kalyan matka", "satta matka satta matka", "online matka play", "online matka play full rate app", "100 deposit matka app download", "satta king", "online satta play", "trusted online matka app", "kalyan online matka", "satta king gali", "fast withdrawal matka app", "satta company", "best site to play online matka"]
 
-  const imagesData = [require('../../Images/rezeetImg/banner_bg.png'), require('../../Images/rezeetImg/banner_bg1.png'), require('../../Images/rezeetImg/banner_bg2.png'), require('../../Images/rezeetImg/banner_bg3.png'), require('../../Images/rezeetImg/banner_bg4.png'), require('../../Images/rezeetImg/banner_bg5.png')]
+  const imagesData = [require('../../Images/rezeetImg/banner_bg.png'), require('../../Images/rezeetImg/banner_bg1.png'), require('../../Images/rezeetImg/banner_bg2.png'), require('../../Images/rezeetImg/banner_bg3.png')]
 
   const [visible, setvisible] = useState(false);
   const Color = useSelector(state => state.Theme.Color)
@@ -88,7 +88,7 @@ const Support = (props) => {
     const interval = setInterval(() => {
       const newRandomNumber = Math.floor(Math.random() * 21); // Generate random number between 0 and 20
 
-      const newRandomNumberBann = Math.floor(Math.random() * 5); // Generate random number between 0 and 20
+      const newRandomNumberBann = Math.floor(Math.random() * 4); // Generate random number between 0 and 20
       // Generate random number between 0 and 20
       setnumber(newRandomNumber);
       setnumber1(newRandomNumberBann);
@@ -144,15 +144,7 @@ const Support = (props) => {
               <Text style={{ fontSize: 18, fontWeight: 'bold', color: Color.onSecondary }}>{data?.contact_details?.mobile_no_1}</Text>
             </View>
           </TouchableOpacity>
-          <TouchableOpacity style={{ flexDirection: 'row', justifyContent: 'space-around', borderBottomWidth: 0.5, borderRadius: 10, backgroundColor: Color.onPrimary, elevation: 1, marginTop: 20, marginHorizontal: 10, borderColor: Color.onSecondary }} activeOpacity={0.5} onPress={() => makePhoneCall(data?.contact_details?.mobile_no_2)}>
-            <View style={{ width: '20%', alignItems: 'center', paddingVertical: 7, borderRightWidth: 0.5, justifyContent: 'center', borderColor: Color.onSecondary }}>
-              <Image source={require('../../Images/rezeetImg/call.png')} style={{ height: 25, width: 25, resizeMode: 'contain', tintColor: Color.onSecondary }} />
-            </View>
-            <View style={{ width: '75%', justifyContent: 'center', paddingVertical: 7 }}>
-
-              <Text style={{ fontSize: 18, fontWeight: 'bold', color: Color.onSecondary }}>{data?.contact_details?.mobile_no_2}</Text>
-            </View>
-          </TouchableOpacity>
+         
           <TouchableOpacity style={{ flexDirection: 'row', justifyContent: 'space-around', borderBottomWidth: 0.5, borderRadius: 10, backgroundColor: Color.onPrimary, elevation: 1, marginTop: 20, marginHorizontal: 10, borderColor: Color.onSecondary }} activeOpacity={0.5} onPress={() => openWhatsApp(`+91${data?.contact_details?.whatsapp_no}`)}>
             <View style={{ width: '20%', alignItems: 'center', paddingVertical: 7, borderRightWidth: 0.5, justifyContent: 'center', borderColor: Color.onSecondary }}>
               <Image source={require('../../Images/rezeetImg/whatsapp.png')} style={{ height: 25, width: 25, resizeMode: 'contain', }} />
@@ -162,15 +154,7 @@ const Support = (props) => {
               <Text style={{ fontSize: 18, fontWeight: 'bold', color: Color.onSecondary }}>{data?.contact_details?.whatsapp_no}</Text>
             </View>
           </TouchableOpacity>
-          <TouchableOpacity style={{ flexDirection: 'row', justifyContent: 'space-around', borderBottomWidth: 0.5, borderRadius: 10, backgroundColor: Color.onPrimary, elevation: 1, marginTop: 20, marginHorizontal: 10, borderColor: Color.onSecondary }} activeOpacity={0.5} onPress={() => sendEmail(data?.contact_details?.email_1)}>
-            <View style={{ width: '20%', alignItems: 'center', paddingVertical: 7, borderRightWidth: 0.5, justifyContent: 'center', borderColor: Color.onSecondary }}>
-              <Image source={require('../../Images/rezeetImg/mail.png')} style={{ height: 30, width: 30, resizeMode: 'contain', tintColor: Color.onSecondary }} />
-            </View>
-            <View style={{ width: '75%', justifyContent: 'center', paddingVertical: 7 }}>
-
-              <Text style={{ fontSize: 18, fontWeight: 'bold', color: Color.onSecondary }}>{data?.contact_details?.email_1}</Text>
-            </View>
-          </TouchableOpacity>
+         
 
 
 

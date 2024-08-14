@@ -48,7 +48,7 @@ const SignUp = ({ navigation }) => {
     return password.length > 3;
   };
   const isPasswordValid = (password) => {
-    return password.length > 5;
+    return password.length >= 3;
   };
   const handleRegistration = () => {
     setContacterror("")

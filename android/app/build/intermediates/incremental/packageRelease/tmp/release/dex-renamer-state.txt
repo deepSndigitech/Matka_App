@@ -1,6 +1,6 @@
-#Mon Aug 12 12:12:15 IST 2024
-base.0=C\:\\Users\\Admin\\Desktop\\Matka\\android\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
-base.1=C\:\\Users\\Admin\\Desktop\\Matka\\android\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes2.dex
+#Wed Aug 14 12:01:27 IST 2024
+base.0=/Users/apple/Desktop/Deepak React-native/Matka_App/android/app/build/intermediates/dex/release/mergeDexRelease/classes.dex
+base.1=/Users/apple/Desktop/Deepak React-native/Matka_App/android/app/build/intermediates/dex/release/mergeDexRelease/classes2.dex
 path.0=classes.dex
 path.1=classes2.dex
 renamed.0=classes.dex

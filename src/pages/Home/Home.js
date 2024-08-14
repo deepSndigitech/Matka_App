@@ -13,7 +13,7 @@ const Home = props => {
 
   const data = ["satta matka", "online matka", "online matka app", "satta matta matka", "matka satta", "matka app", "online satta app", "kalyan matka", "satta matka satta matka", "online matka play", "online matka play full rate app", "100 deposit matka app download", "satta king", "online satta play", "trusted online matka app", "kalyan online matka", "satta king gali", "fast withdrawal matka app", "satta company", "best site to play online matka"]
 
-  const imagesData = [require('../../Images/rezeetImg/banner_bg.png'), require('../../Images/rezeetImg/banner_bg1.png'), require('../../Images/rezeetImg/banner_bg2.png'), require('../../Images/rezeetImg/banner_bg3.png'), require('../../Images/rezeetImg/banner_bg4.png'), require('../../Images/rezeetImg/banner_bg5.png')]
+  const imagesData = [require('../../Images/rezeetImg/banner_bg.png'), require('../../Images/rezeetImg/banner_bg1.png'), require('../../Images/rezeetImg/banner_bg2.png'), require('../../Images/rezeetImg/banner_bg3.png')]
 
   const Color = useSelector(state => state.Theme.Color)
   const openWhatsApp = (phoneNumber) => {
@@ -45,10 +45,10 @@ const Home = props => {
       const number5 = Math.floor(Math.random() * 21); // Generate random number between 0 and 20
       const number6 = Math.floor(Math.random() * 21); // Generate random number between 0 and 20
       const number7 = Math.floor(Math.random() * 21); // Generate random number between 0 and 20
-      const newRandomNumberBann = Math.floor(Math.random() * 5); // Generate random number between 0 and 20
-      const setnumber122 = Math.floor(Math.random() * 5); // Generate random number between 0 and 20
-      const setnumber121 = Math.floor(Math.random() * 5); // Generate random number between 0 and 20
-      const setnumber1222 = Math.floor(Math.random() * 5); // Generate random number between 0 and 20
+      const newRandomNumberBann = Math.floor(Math.random() * 3); // Generate random number between 0 and 20
+      const setnumber122 = Math.floor(Math.random() * 3); // Generate random number between 0 and 20
+      const setnumber121 = Math.floor(Math.random() * 3); // Generate random number between 0 and 20
+      const setnumber1222 = Math.floor(Math.random() * 3); // Generate random number between 0 and 20
       setRandomNumber(newRandomNumber);
       setnumber1(number2);
       setnumber2(number3);

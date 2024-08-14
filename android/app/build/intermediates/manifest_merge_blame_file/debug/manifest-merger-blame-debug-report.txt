@@ -1,0 +1,296 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.rezeet"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="33" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->/Users/apple/Desktop/Deepak React-native/Matka_App/android/app/src/debug/AndroidManifest.xml:5:5-77
+11-->/Users/apple/Desktop/Deepak React-native/Matka_App/android/app/src/debug/AndroidManifest.xml:5:22-75
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/Users/apple/Desktop/Deepak React-native/Matka_App/android/app/src/main/AndroidManifest.xml:3:5-67
+12-->/Users/apple/Desktop/Deepak React-native/Matka_App/android/app/src/main/AndroidManifest.xml:3:22-64
+13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+13-->/Users/apple/Desktop/Deepak React-native/Matka_App/android/app/src/debug/AndroidManifest.xml:7:5-81
+13-->/Users/apple/Desktop/Deepak React-native/Matka_App/android/app/src/debug/AndroidManifest.xml:7:22-78
+14    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+14-->/Users/apple/Desktop/Deepak React-native/Matka_App/android/app/src/debug/AndroidManifest.xml:8:5-80
+14-->/Users/apple/Desktop/Deepak React-native/Matka_App/android/app/src/debug/AndroidManifest.xml:8:22-77
+15    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+15-->[com.facebook.flipper:flipper:0.182.0] /Users/apple/.gradle/caches/transforms-3/e13f88164840fe641a466d05cd8edac7/transformed/jetified-flipper-0.182.0/AndroidManifest.xml:16:5-76
+15-->[com.facebook.flipper:flipper:0.182.0] /Users/apple/.gradle/caches/transforms-3/e13f88164840fe641a466d05cd8edac7/transformed/jetified-flipper-0.182.0/AndroidManifest.xml:16:22-73
+16    <uses-permission android:name="android.permission.CAMERA" />
+16-->[:react-native-camera] /Users/apple/Desktop/Deepak React-native/Matka_App/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml:7:5-65
+16-->[:react-native-camera] /Users/apple/Desktop/Deepak React-native/Matka_App/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml:7:22-62
+17
+18    <uses-feature
+18-->[:react-native-camera] /Users/apple/Desktop/Deepak React-native/Matka_App/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml:9:5-11:36
+19        android:name="android.hardware.camera"
+19-->[:react-native-camera] /Users/apple/Desktop/Deepak React-native/Matka_App/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml:10:9-47
+20        android:required="false" />
+20-->[:react-native-camera] /Users/apple/Desktop/Deepak React-native/Matka_App/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml:11:9-33
+21    <uses-feature
+21-->[:react-native-camera] /Users/apple/Desktop/Deepak React-native/Matka_App/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml:12:5-14:36
+22        android:name="android.hardware.camera.autofocus"
+22-->[:react-native-camera] /Users/apple/Desktop/Deepak React-native/Matka_App/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml:13:9-57
+23        android:required="false" />
+23-->[:react-native-camera] /Users/apple/Desktop/Deepak React-native/Matka_App/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml:14:9-33
+24
+25    <queries>
+25-->[:react-native-image-crop-picker] /Users/apple/Desktop/Deepak React-native/Matka_App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-11:15
+26        <intent>
+26-->[:react-native-image-crop-picker] /Users/apple/Desktop/Deepak React-native/Matka_App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-10:18
+27            <action android:name="android.media.action.IMAGE_CAPTURE" />
+27-->[:react-native-image-crop-picker] /Users/apple/Desktop/Deepak React-native/Matka_App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-73
+27-->[:react-native-image-crop-picker] /Users/apple/Desktop/Deepak React-native/Matka_App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:21-70
+28        </intent>
+29    </queries> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+30    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+31    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+31-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/apple/.gradle/caches/transforms-3/e39449332b16abbff71917ad5661bdd3/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:25:5-79
+31-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/apple/.gradle/caches/transforms-3/e39449332b16abbff71917ad5661bdd3/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:25:22-76
+32
+33    <application
+33-->/Users/apple/Desktop/Deepak React-native/Matka_App/android/app/src/main/AndroidManifest.xml:17:5-39:19
+34        android:name="com.rezeet.MainApplication"
+34-->/Users/apple/Desktop/Deepak React-native/Matka_App/android/app/src/main/AndroidManifest.xml:18:7-38
+35        android:allowBackup="false"
+35-->/Users/apple/Desktop/Deepak React-native/Matka_App/android/app/src/main/AndroidManifest.xml:22:7-34
+36        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+36-->[androidx.core:core:1.8.0] /Users/apple/.gradle/caches/transforms-3/9623e378e4dfc57c47793d0ffd25ee05/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
+37        android:debuggable="true"
+38        android:exported="true"
+38-->/Users/apple/Desktop/Deepak React-native/Matka_App/android/app/src/main/AndroidManifest.xml:23:7-30
+39        android:icon="@mipmap/ic_launcher"
+39-->/Users/apple/Desktop/Deepak React-native/Matka_App/android/app/src/main/AndroidManifest.xml:20:7-41
+40        android:label="@string/app_name"
+40-->/Users/apple/Desktop/Deepak React-native/Matka_App/android/app/src/main/AndroidManifest.xml:19:7-39
+41        android:roundIcon="@mipmap/ic_launcher_round"
+41-->/Users/apple/Desktop/Deepak React-native/Matka_App/android/app/src/main/AndroidManifest.xml:21:7-52
+42        android:theme="@style/AppTheme"
+42-->/Users/apple/Desktop/Deepak React-native/Matka_App/android/app/src/main/AndroidManifest.xml:25:7-38
+43        android:usesCleartextTraffic="true" >
+43-->/Users/apple/Desktop/Deepak React-native/Matka_App/android/app/src/main/AndroidManifest.xml:24:7-42
+44        <activity
+44-->/Users/apple/Desktop/Deepak React-native/Matka_App/android/app/src/debug/AndroidManifest.xml:15:9-111
+45            android:name="com.facebook.react.devsupport.DevSettingsActivity"
+45-->/Users/apple/Desktop/Deepak React-native/Matka_App/android/app/src/debug/AndroidManifest.xml:15:19-83
+46            android:exported="false" />
+46-->/Users/apple/Desktop/Deepak React-native/Matka_App/android/app/src/debug/AndroidManifest.xml:15:84-108
+47        <activity
+47-->/Users/apple/Desktop/Deepak React-native/Matka_App/android/app/src/main/AndroidManifest.xml:26:7-38:18
+48            android:name="com.rezeet.MainActivity"
+48-->/Users/apple/Desktop/Deepak React-native/Matka_App/android/app/src/main/AndroidManifest.xml:27:9-37
+49            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
+49-->/Users/apple/Desktop/Deepak React-native/Matka_App/android/app/src/main/AndroidManifest.xml:30:9-118
+50            android:exported="true"
+50-->/Users/apple/Desktop/Deepak React-native/Matka_App/android/app/src/main/AndroidManifest.xml:33:9-32
+51            android:label="@string/app_name"
+51-->/Users/apple/Desktop/Deepak React-native/Matka_App/android/app/src/main/AndroidManifest.xml:28:9-41
+52            android:launchMode="singleTask"
+52-->/Users/apple/Desktop/Deepak React-native/Matka_App/android/app/src/main/AndroidManifest.xml:31:9-40
+53            android:windowSoftInputMode="adjustResize" >
+53-->/Users/apple/Desktop/Deepak React-native/Matka_App/android/app/src/main/AndroidManifest.xml:32:9-51
+54            <intent-filter>
+54-->/Users/apple/Desktop/Deepak React-native/Matka_App/android/app/src/main/AndroidManifest.xml:34:9-37:25
+55                <action android:name="android.intent.action.MAIN" />
+55-->/Users/apple/Desktop/Deepak React-native/Matka_App/android/app/src/main/AndroidManifest.xml:35:13-65
+55-->/Users/apple/Desktop/Deepak React-native/Matka_App/android/app/src/main/AndroidManifest.xml:35:21-62
+56
+57                <category android:name="android.intent.category.LAUNCHER" />
+57-->/Users/apple/Desktop/Deepak React-native/Matka_App/android/app/src/main/AndroidManifest.xml:36:13-73
+57-->/Users/apple/Desktop/Deepak React-native/Matka_App/android/app/src/main/AndroidManifest.xml:36:23-70
+58            </intent-filter>
+59        </activity>
+60
+61        <provider
+61-->[:react-native-image-crop-picker] /Users/apple/Desktop/Deepak React-native/Matka_App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:16:9-24:20
+62            android:name="com.reactnative.ivpusic.imagepicker.IvpusicImagePickerFileProvider"
+62-->[:react-native-image-crop-picker] /Users/apple/Desktop/Deepak React-native/Matka_App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-94
+63            android:authorities="com.rezeet.provider"
+63-->[:react-native-image-crop-picker] /Users/apple/Desktop/Deepak React-native/Matka_App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-60
+64            android:exported="false"
+64-->[:react-native-image-crop-picker] /Users/apple/Desktop/Deepak React-native/Matka_App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-37
+65            android:grantUriPermissions="true" >
+65-->[:react-native-image-crop-picker] /Users/apple/Desktop/Deepak React-native/Matka_App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-47
+66            <meta-data
+66-->[:react-native-image-crop-picker] /Users/apple/Desktop/Deepak React-native/Matka_App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-23:78
+67                android:name="android.support.FILE_PROVIDER_PATHS"
+67-->[:react-native-image-crop-picker] /Users/apple/Desktop/Deepak React-native/Matka_App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:22:17-67
+68                android:resource="@xml/ivpusic_imagepicker_provider_paths" />
+68-->[:react-native-image-crop-picker] /Users/apple/Desktop/Deepak React-native/Matka_App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:23:17-75
+69        </provider>
+70
+71        <activity
+71-->[:react-native-image-crop-picker] /Users/apple/Desktop/Deepak React-native/Matka_App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:26:9-28:72
+72            android:name="com.yalantis.ucrop.UCropActivity"
+72-->[:react-native-image-crop-picker] /Users/apple/Desktop/Deepak React-native/Matka_App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:27:13-60
+73            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+73-->[:react-native-image-crop-picker] /Users/apple/Desktop/Deepak React-native/Matka_App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:28:13-69
+74
+75        <provider
+75-->[:react-native-share] /Users/apple/Desktop/Deepak React-native/Matka_App/node_modules/react-native-share/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-16:20
+76            android:name="cl.json.RNShareFileProvider"
+76-->[:react-native-share] /Users/apple/Desktop/Deepak React-native/Matka_App/node_modules/react-native-share/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-55
+77            android:authorities="com.rezeet.rnshare.fileprovider"
+77-->[:react-native-share] /Users/apple/Desktop/Deepak React-native/Matka_App/node_modules/react-native-share/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:13-72
+78            android:exported="false"
+78-->[:react-native-share] /Users/apple/Desktop/Deepak React-native/Matka_App/node_modules/react-native-share/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-37
+79            android:grantUriPermissions="true" >
+79-->[:react-native-share] /Users/apple/Desktop/Deepak React-native/Matka_App/node_modules/react-native-share/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-47
+80            <meta-data
+80-->[:react-native-image-crop-picker] /Users/apple/Desktop/Deepak React-native/Matka_App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-23:78
+81                android:name="android.support.FILE_PROVIDER_PATHS"
+81-->[:react-native-image-crop-picker] /Users/apple/Desktop/Deepak React-native/Matka_App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:22:17-67
+82                android:resource="@xml/share_download_paths" />
+82-->[:react-native-image-crop-picker] /Users/apple/Desktop/Deepak React-native/Matka_App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:23:17-75
+83        </provider>
+84        <provider
+84-->[:react-native-webview] /Users/apple/Desktop/Deepak React-native/Matka_App/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-16:20
+85            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
+85-->[:react-native-webview] /Users/apple/Desktop/Deepak React-native/Matka_App/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-83
+86            android:authorities="com.rezeet.fileprovider"
+86-->[:react-native-webview] /Users/apple/Desktop/Deepak React-native/Matka_App/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:13-64
+87            android:exported="false"
+87-->[:react-native-webview] /Users/apple/Desktop/Deepak React-native/Matka_App/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-37
+88            android:grantUriPermissions="true" >
+88-->[:react-native-webview] /Users/apple/Desktop/Deepak React-native/Matka_App/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-47
+89            <meta-data
+89-->[:react-native-image-crop-picker] /Users/apple/Desktop/Deepak React-native/Matka_App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-23:78
+90                android:name="android.support.FILE_PROVIDER_PATHS"
+90-->[:react-native-image-crop-picker] /Users/apple/Desktop/Deepak React-native/Matka_App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:22:17-67
+91                android:resource="@xml/file_provider_paths" />
+91-->[:react-native-image-crop-picker] /Users/apple/Desktop/Deepak React-native/Matka_App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:23:17-75
+92        </provider>
+93
+94        <service
+94-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.2.0] /Users/apple/.gradle/caches/transforms-3/97799781954acc3d7354150c72b84ae2/transformed/jetified-play-services-mlkit-barcode-scanning-16.2.0/AndroidManifest.xml:9:9-15:19
+95            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+95-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.2.0] /Users/apple/.gradle/caches/transforms-3/97799781954acc3d7354150c72b84ae2/transformed/jetified-play-services-mlkit-barcode-scanning-16.2.0/AndroidManifest.xml:10:13-91
+96            android:directBootAware="true"
+96-->[com.google.mlkit:common:17.2.0] /Users/apple/.gradle/caches/transforms-3/53ad5d231868f74729b71d2d86f60f8e/transformed/jetified-common-17.2.0/AndroidManifest.xml:17:13-43
+97            android:exported="false" >
+97-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.2.0] /Users/apple/.gradle/caches/transforms-3/97799781954acc3d7354150c72b84ae2/transformed/jetified-play-services-mlkit-barcode-scanning-16.2.0/AndroidManifest.xml:11:13-37
+98            <meta-data
+98-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.2.0] /Users/apple/.gradle/caches/transforms-3/97799781954acc3d7354150c72b84ae2/transformed/jetified-play-services-mlkit-barcode-scanning-16.2.0/AndroidManifest.xml:12:13-14:85
+99                android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar"
+99-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.2.0] /Users/apple/.gradle/caches/transforms-3/97799781954acc3d7354150c72b84ae2/transformed/jetified-play-services-mlkit-barcode-scanning-16.2.0/AndroidManifest.xml:13:17-120
+100                android:value="com.google.firebase.components.ComponentRegistrar" />
+100-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.2.0] /Users/apple/.gradle/caches/transforms-3/97799781954acc3d7354150c72b84ae2/transformed/jetified-play-services-mlkit-barcode-scanning-16.2.0/AndroidManifest.xml:14:17-82
+101            <meta-data
+101-->[com.google.android.gms:play-services-mlkit-face-detection:16.2.0] /Users/apple/.gradle/caches/transforms-3/b9f3389d51c178b8d896d7baeb40c059/transformed/jetified-play-services-mlkit-face-detection-16.2.0/AndroidManifest.xml:12:13-14:85
+102                android:name="com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar"
+102-->[com.google.android.gms:play-services-mlkit-face-detection:16.2.0] /Users/apple/.gradle/caches/transforms-3/b9f3389d51c178b8d896d7baeb40c059/transformed/jetified-play-services-mlkit-face-detection-16.2.0/AndroidManifest.xml:13:17-114
+103                android:value="com.google.firebase.components.ComponentRegistrar" />
+103-->[com.google.android.gms:play-services-mlkit-face-detection:16.2.0] /Users/apple/.gradle/caches/transforms-3/b9f3389d51c178b8d896d7baeb40c059/transformed/jetified-play-services-mlkit-face-detection-16.2.0/AndroidManifest.xml:14:17-82
+104            <meta-data
+104-->[com.google.android.gms:play-services-mlkit-text-recognition:16.3.0] /Users/apple/.gradle/caches/transforms-3/b92474410cc7ebbd2fad55921816aa5f/transformed/jetified-play-services-mlkit-text-recognition-16.3.0/AndroidManifest.xml:12:13-14:85
+105                android:name="com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar"
+105-->[com.google.android.gms:play-services-mlkit-text-recognition:16.3.0] /Users/apple/.gradle/caches/transforms-3/b92474410cc7ebbd2fad55921816aa5f/transformed/jetified-play-services-mlkit-text-recognition-16.3.0/AndroidManifest.xml:13:17-114
+106                android:value="com.google.firebase.components.ComponentRegistrar" />
+106-->[com.google.android.gms:play-services-mlkit-text-recognition:16.3.0] /Users/apple/.gradle/caches/transforms-3/b92474410cc7ebbd2fad55921816aa5f/transformed/jetified-play-services-mlkit-text-recognition-16.3.0/AndroidManifest.xml:14:17-82
+107            <meta-data
+107-->[com.google.mlkit:vision-common:16.5.0] /Users/apple/.gradle/caches/transforms-3/b86801a92097a5dcc8fcd3577b45f061/transformed/jetified-vision-common-16.5.0/AndroidManifest.xml:12:13-14:85
+108                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+108-->[com.google.mlkit:vision-common:16.5.0] /Users/apple/.gradle/caches/transforms-3/b86801a92097a5dcc8fcd3577b45f061/transformed/jetified-vision-common-16.5.0/AndroidManifest.xml:13:17-124
+109                android:value="com.google.firebase.components.ComponentRegistrar" />
+109-->[com.google.mlkit:vision-common:16.5.0] /Users/apple/.gradle/caches/transforms-3/b86801a92097a5dcc8fcd3577b45f061/transformed/jetified-vision-common-16.5.0/AndroidManifest.xml:14:17-82
+110            <meta-data
+110-->[com.google.mlkit:common:17.2.0] /Users/apple/.gradle/caches/transforms-3/53ad5d231868f74729b71d2d86f60f8e/transformed/jetified-common-17.2.0/AndroidManifest.xml:20:13-22:85
+111                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+111-->[com.google.mlkit:common:17.2.0] /Users/apple/.gradle/caches/transforms-3/53ad5d231868f74729b71d2d86f60f8e/transformed/jetified-common-17.2.0/AndroidManifest.xml:21:17-120
+112                android:value="com.google.firebase.components.ComponentRegistrar" />
+112-->[com.google.mlkit:common:17.2.0] /Users/apple/.gradle/caches/transforms-3/53ad5d231868f74729b71d2d86f60f8e/transformed/jetified-common-17.2.0/AndroidManifest.xml:22:17-82
+113        </service>
+114
+115        <provider
+115-->[com.google.mlkit:common:17.2.0] /Users/apple/.gradle/caches/transforms-3/53ad5d231868f74729b71d2d86f60f8e/transformed/jetified-common-17.2.0/AndroidManifest.xml:9:9-13:38
+116            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+116-->[com.google.mlkit:common:17.2.0] /Users/apple/.gradle/caches/transforms-3/53ad5d231868f74729b71d2d86f60f8e/transformed/jetified-common-17.2.0/AndroidManifest.xml:10:13-78
+117            android:authorities="com.rezeet.mlkitinitprovider"
+117-->[com.google.mlkit:common:17.2.0] /Users/apple/.gradle/caches/transforms-3/53ad5d231868f74729b71d2d86f60f8e/transformed/jetified-common-17.2.0/AndroidManifest.xml:11:13-69
+118            android:exported="false"
+118-->[com.google.mlkit:common:17.2.0] /Users/apple/.gradle/caches/transforms-3/53ad5d231868f74729b71d2d86f60f8e/transformed/jetified-common-17.2.0/AndroidManifest.xml:12:13-37
+119            android:initOrder="99" />
+119-->[com.google.mlkit:common:17.2.0] /Users/apple/.gradle/caches/transforms-3/53ad5d231868f74729b71d2d86f60f8e/transformed/jetified-common-17.2.0/AndroidManifest.xml:13:13-35
+120
+121        <activity
+121-->[com.google.android.gms:play-services-base:17.6.0] /Users/apple/.gradle/caches/transforms-3/795676a79a0c8e1cc25c8530d5bb032b/transformed/jetified-play-services-base-17.6.0/AndroidManifest.xml:23:9-26:75
+122            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+122-->[com.google.android.gms:play-services-base:17.6.0] /Users/apple/.gradle/caches/transforms-3/795676a79a0c8e1cc25c8530d5bb032b/transformed/jetified-play-services-base-17.6.0/AndroidManifest.xml:24:13-79
+123            android:exported="false"
+123-->[com.google.android.gms:play-services-base:17.6.0] /Users/apple/.gradle/caches/transforms-3/795676a79a0c8e1cc25c8530d5bb032b/transformed/jetified-play-services-base-17.6.0/AndroidManifest.xml:25:13-37
+124            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+124-->[com.google.android.gms:play-services-base:17.6.0] /Users/apple/.gradle/caches/transforms-3/795676a79a0c8e1cc25c8530d5bb032b/transformed/jetified-play-services-base-17.6.0/AndroidManifest.xml:26:13-72
+125
+126        <meta-data
+126-->[com.google.android.gms:play-services-basement:17.6.0] /Users/apple/.gradle/caches/transforms-3/b63984d3b045444cdc55f8997826a36d/transformed/jetified-play-services-basement-17.6.0/AndroidManifest.xml:23:9-25:69
+127            android:name="com.google.android.gms.version"
+127-->[com.google.android.gms:play-services-basement:17.6.0] /Users/apple/.gradle/caches/transforms-3/b63984d3b045444cdc55f8997826a36d/transformed/jetified-play-services-basement-17.6.0/AndroidManifest.xml:24:13-58
+128            android:value="@integer/google_play_services_version" />
+128-->[com.google.android.gms:play-services-basement:17.6.0] /Users/apple/.gradle/caches/transforms-3/b63984d3b045444cdc55f8997826a36d/transformed/jetified-play-services-basement-17.6.0/AndroidManifest.xml:25:13-66
+129        <meta-data
+129-->[com.facebook.soloader:soloader:0.10.5] /Users/apple/.gradle/caches/transforms-3/ec3312a013bd7d8a70466a1977a1dba4/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:12:9-14:37
+130            android:name="com.facebook.soloader.enabled"
+130-->[com.facebook.soloader:soloader:0.10.5] /Users/apple/.gradle/caches/transforms-3/ec3312a013bd7d8a70466a1977a1dba4/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:13:13-57
+131            android:value="false" />
+131-->[com.facebook.soloader:soloader:0.10.5] /Users/apple/.gradle/caches/transforms-3/ec3312a013bd7d8a70466a1977a1dba4/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:14:13-34
+132
+133        <provider
+133-->[androidx.emoji2:emoji2:1.2.0] /Users/apple/.gradle/caches/transforms-3/259206a491dfa4b8b6052b2b1c41d979/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+134            android:name="androidx.startup.InitializationProvider"
+134-->[androidx.emoji2:emoji2:1.2.0] /Users/apple/.gradle/caches/transforms-3/259206a491dfa4b8b6052b2b1c41d979/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+135            android:authorities="com.rezeet.androidx-startup"
+135-->[androidx.emoji2:emoji2:1.2.0] /Users/apple/.gradle/caches/transforms-3/259206a491dfa4b8b6052b2b1c41d979/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+136            android:exported="false" >
+136-->[androidx.emoji2:emoji2:1.2.0] /Users/apple/.gradle/caches/transforms-3/259206a491dfa4b8b6052b2b1c41d979/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
+137            <meta-data
+137-->[androidx.emoji2:emoji2:1.2.0] /Users/apple/.gradle/caches/transforms-3/259206a491dfa4b8b6052b2b1c41d979/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+138                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+138-->[androidx.emoji2:emoji2:1.2.0] /Users/apple/.gradle/caches/transforms-3/259206a491dfa4b8b6052b2b1c41d979/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+139                android:value="androidx.startup" />
+139-->[androidx.emoji2:emoji2:1.2.0] /Users/apple/.gradle/caches/transforms-3/259206a491dfa4b8b6052b2b1c41d979/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+140            <meta-data
+140-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/apple/.gradle/caches/transforms-3/b1c537e6049df5a2dcb1a9b20b1a8868/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+141                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+141-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/apple/.gradle/caches/transforms-3/b1c537e6049df5a2dcb1a9b20b1a8868/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+142                android:value="androidx.startup" />
+142-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/apple/.gradle/caches/transforms-3/b1c537e6049df5a2dcb1a9b20b1a8868/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+143        </provider>
+144
+145        <service
+145-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/apple/.gradle/caches/transforms-3/e39449332b16abbff71917ad5661bdd3/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:29:9-35:19
+146            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+146-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/apple/.gradle/caches/transforms-3/e39449332b16abbff71917ad5661bdd3/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:30:13-103
+147            android:exported="false" >
+147-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/apple/.gradle/caches/transforms-3/e39449332b16abbff71917ad5661bdd3/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:31:13-37
+148            <meta-data
+148-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/apple/.gradle/caches/transforms-3/e39449332b16abbff71917ad5661bdd3/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:32:13-34:39
+149                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+149-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/apple/.gradle/caches/transforms-3/e39449332b16abbff71917ad5661bdd3/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:33:17-94
+150                android:value="cct" />
+150-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/apple/.gradle/caches/transforms-3/e39449332b16abbff71917ad5661bdd3/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:34:17-36
+151        </service>
+152        <service
+152-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/apple/.gradle/caches/transforms-3/5b4aa339182f7c0c9798b03e5e65fdd0/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:26:9-30:19
+153            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+153-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/apple/.gradle/caches/transforms-3/5b4aa339182f7c0c9798b03e5e65fdd0/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:27:13-117
+154            android:exported="false"
+154-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/apple/.gradle/caches/transforms-3/5b4aa339182f7c0c9798b03e5e65fdd0/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:28:13-37
+155            android:permission="android.permission.BIND_JOB_SERVICE" >
+155-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/apple/.gradle/caches/transforms-3/5b4aa339182f7c0c9798b03e5e65fdd0/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:29:13-69
+156        </service>
+157
+158        <receiver
+158-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/apple/.gradle/caches/transforms-3/5b4aa339182f7c0c9798b03e5e65fdd0/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:32:9-34:40
+159            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+159-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/apple/.gradle/caches/transforms-3/5b4aa339182f7c0c9798b03e5e65fdd0/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:33:13-132
+160            android:exported="false" />
+160-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/apple/.gradle/caches/transforms-3/5b4aa339182f7c0c9798b03e5e65fdd0/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:34:13-37
+161    </application>
+162
+163</manifest>

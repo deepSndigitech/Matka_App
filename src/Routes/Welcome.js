@@ -27,19 +27,23 @@ const Welcome = props => {
           <Text style={{ color: '#170B3B', textAlign: 'center', fontSize: 18, fontWeight: '700' }}>Login</Text>
         </TouchableOpacity>
 
-
+        <Text style={{ width: '10%', textAlign: 'center', color: Color.onError }}>OR</Text>
+        <TouchableOpacity style={{ marginHorizontal: 20, borderRadius: 10, padding: 5, width: '40%', backgroundColor: Color.onError, marginBottom: 20, marginTop: 20 }} onPress={() => props.navigation.navigate('SignUp')}>
+          <Text style={{ color: '#170B3B', textAlign: 'center', fontSize: 18, fontWeight: '700' }}>Sign Up</Text>
+        </TouchableOpacity>
+{/* 
         <View style={{ margin: 20, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginTop: 40 }}>
           <View style={{ height: 1, backgroundColor: Color.onError, width: '35%' }} />
           <Text style={{ width: '10%', textAlign: 'center', color: Color.onError }}>OR</Text>
           <View style={{ height: 1, backgroundColor: Color.onError, width: '35%' }} />
-        </View>
+        </View> */}
 
-        <View style={{ flexDirection: 'row', alignSelf: 'center', marginVertical: 30 }}>
+        {/* <View style={{ flexDirection: 'row', alignSelf: 'center', marginVertical: 30 }}>
           <Text style={{ color: Color.onError }}>Don’t have an account? </Text>
           <TouchableOpacity onPress={() => props.navigation.navigate('SignUp')}>
             <Text style={{ fontWeight: 'bold', color: Color.onError }}>Signup</Text>
           </TouchableOpacity>
-        </View>
+        </View> */}
 
 
         {/* <TouchableOpacity style={{ marginHorizontal: 20, borderRadius: 10, backgroundColor: Color.onPrimary, padding: 6, width: '70%', borderWidth: 1, borderColor: Color.tertiary, flexDirection: 'row', justifyContent: 'center' }} onPress={() => props.navigation.navigate('Home')}>

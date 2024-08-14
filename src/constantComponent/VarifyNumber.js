@@ -1,6 +1,6 @@
 import moment from "moment";
 import { useRef, useState } from "react";
-import { ScrollView, TouchableOpacity, Text, View, Dimensions, Image, TextInput, Keyboard, ActivityIndicator } from "react-native"
+import { ScrollView, TouchableOpacity, Text, View, Dimensions, Image, TextInput, Keyboard, ActivityIndicator, ToastAndroid } from "react-native"
 import Modal from 'react-native-modal';
 import { useSelector } from "react-redux";
 import { APIRequestWithFile, apiMethod, apiRoutes, apimethods } from "../apiConfig/apiurl";
@@ -15,7 +15,7 @@ const VarifyNumber = ({ visible, onClose, contect, countryCode, setContactVerifi
     const Color = useSelector(state => state.Theme.Color)
 
     const [loading, setloading] = useState(false)
-
+    const [Loadings, setLoadings] = useState(false)
     const handleOtpChange = (index, value) => {
         const newOtp = [...otp];
         newOtp[index] = value;
@@ -104,6 +104,59 @@ const VarifyNumber = ({ visible, onClose, contect, countryCode, setContactVerifi
     }
 
 
+    const reSendCode = () => {
+
+        const fd = new FormData();
+
+        fd.append('mobile', contect);
+
+        let config = {
+            url: apiRoutes.resendOtp,
+            method: 'post',
+            body: fd
+        };
+        setLoadings(true)
+        APIRequestWithFile(
+            config,
+            res => {
+                console.log(res, '--@@@@@@@@@-res');
+                if (res?.status === "success") {
+                    // Toast.show({
+                    //     text1: res?.message,
+                    //     type: 'success'
+                    // });
+                    ToastAndroid.showWithGravityAndOffset(
+                        res?.message,
+                        ToastAndroid.LONG,
+                        ToastAndroid.BOTTOM,
+                        25,
+                        50,
+                      );
+                    // onClose();
+                    setOtp(['', '', '', '']);
+                    
+
+                }
+                else {
+                    Toast.show({
+                        text1: res?.message,
+                        type: 'error'
+                    });
+                }
+                // SetSendMessage(mess = res?.data, type = audioFile ? 'audio' : 'image')
+                setLoadings(false)
+            },
+            err => {
+                console.log(err?.message, '---err');
+                setLoadings(false)
+                // if (err?.message) {
+
+                // }
+            }
+        );
+
+    }
+
 
     return (
         <>
@@ -168,15 +221,18 @@ const VarifyNumber = ({ visible, onClose, contect, countryCode, setContactVerifi
                                 />
                             ))}
                         </View>
-                        {/* <View style={{ marginTop: 30, alignSelf: 'center', flexDirection: 'row' }}>
+                        <View style={{ marginTop: 30, alignSelf: 'center', flexDirection: 'row' }}>
                             <Text style={{ color: Color.onSecondary, fontSize: 12 }}>Didn’t Receive Code?</Text>
-                            <TouchableOpacity>
-                                <Text style={{ fontWeight: '700', color: Color.onSecondary, textDecorationLine: 'underline', fontSize: 12 }}> Resend Code</Text>
+                            <TouchableOpacity onPress={() => reSendCode()}>
+                                {Loadings ?
+                                    <ActivityIndicator size={20} color={"#000"} />
+                                    :
+                                    <Text style={{ fontWeight: '700', color: Color.onSecondary, textDecorationLine: 'underline', fontSize: 12 }}> Resend Code</Text>
+
+
+                                }
                             </TouchableOpacity>
                         </View>
-                        <View style={{ marginTop: 10, alignSelf: 'center', flexDirection: 'row' }}>
-                            <Text style={{ color: Color.onSecondary, fontSize: 12 }}>Resend code in 00:59</Text>
-                        </View> */}
 
                         <TouchableOpacity style={{ alignSelf: 'center', marginTop: 50, marginHorizontal: 20, borderRadius: 10, padding: 7, width: '80%', borderWidth: 1, borderColor: Color.onSecondary, justifyContent: 'center' }}
                         // onPress={() => submitOtp()}

@@ -1,12 +1,12 @@
 <lint-module
     format="1"
-    dir="C:\Users\Admin\Desktop\Matka\android\app"
+    dir="/Users/apple/Desktop/Deepak React-native/Matka_App/android/app"
     name=":app"
     type="APP"
     maven="Rezeet:app:"
     gradle="7.4.2"
     buildFolder="build"
-    bootClassPath="C:\Users\Admin\AppData\Local\Android\Sdk\platforms\android-33\android.jar;C:\Users\Admin\AppData\Local\Android\Sdk\build-tools\30.0.3\core-lambda-stubs.jar"
+    bootClassPath="/Users/apple/Library/Android/sdk/platforms/android-33/android.jar:/Users/apple/Library/Android/sdk/build-tools/30.0.3/core-lambda-stubs.jar"
     javaSourceLevel="11"
     compileTarget="android-33"
     neverShrinking="true">

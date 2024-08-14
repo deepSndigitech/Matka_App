@@ -107,7 +107,7 @@ const ForgetPassword = ({ navigation }) => {
 
       <View style={{ marginHorizontal: 20, marginTop: 20 }}>
 
-        <TouchableOpacity style={{ flexDirection: 'row', width: 35 }} onPress={() => props.navigation.pop()}>
+        <TouchableOpacity style={{ flexDirection: 'row', width: 35 }} onPress={() => navigation.pop()}>
           <Image style={{ height: 35, width: 35, marginRight: 10, tintColor: Color.onSecondary, resizeMode: 'contain' }} source={require('../../Images/rezeetImg/left_arrow.png')} />
         </TouchableOpacity>
       </View>

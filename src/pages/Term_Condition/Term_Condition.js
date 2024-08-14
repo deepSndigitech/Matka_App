@@ -57,12 +57,12 @@ const Term_Condition = ({ navigation }) => {
         // style={{ flex: 1 }}
         />
       </View>
-      <TouchableOpacity onPress={() => bannerChange()}>
+      <TouchableOpacity onPress={() => bannerChange()} style={{marginTop:20}}>
 
-        <ImageBackground style={{ width: '96%', height: 70, alignSelf: 'center', justifyContent: 'center', position: 'relative', bottom: 20 }} resizeMode='stretch' source={imagesData[number1]}>
-          <Text style={{ fontWeight: '700', color: '#FFF', marginLeft: 20, fontSize: 20 }}>{datas[number]}</Text>
-        </ImageBackground>
-      </TouchableOpacity>
+<ImageBackground style={{ width: '96%', height: 60, alignSelf: 'center', justifyContent: 'center', position: 'relative', bottom: 20 }} resizeMode='stretch' source={imagesData[number1]}>
+  <Text style={{ fontWeight: '700', color: '#FFF', marginLeft: 20, fontSize: 20 }}>{datas[number]}</Text>
+</ImageBackground>
+</TouchableOpacity>
 
 
 

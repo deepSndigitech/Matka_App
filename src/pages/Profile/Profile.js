@@ -131,21 +131,14 @@ const Profile = (props) => {
             </View>
           </View>
           <Text style={{ marginTop: 20, marginBottom: 10, marginHorizontal: 20, color: '#111111', fontWeight: '700' }}>Mobile</Text>
-          <View style={{ flexDirection: 'row', justifyContent: 'space-around', borderBottomWidth: 0.5, borderRadius: 10, backgroundColor: Color.onPrimary, elevation: 5, marginHorizontal: 20, borderColor: Color.onSecondary }} >
+          <View style={{ flexDirection: 'row', justifyContent: 'space-around', borderBottomWidth: 0.5, borderRadius: 10, backgroundColor: Color.onPrimary, elevation: 5, marginHorizontal: 20, borderColor: Color.onSecondary,marginBottom:20 }} >
 
             <View style={{ width: '75%', justifyContent: 'center', paddingVertical: 7 }}>
 
               <Text style={{ fontSize: 18, fontWeight: 'bold', color: Color.onSecondary }}>{data?.mobile}</Text>
             </View>
           </View>
-          <Text style={{ marginTop: 20, marginBottom: 10, marginHorizontal: 20, color: '#111111', fontWeight: '700' }}>Email Address</Text>
-          <View style={{ flexDirection: 'row', justifyContent: 'space-around', borderBottomWidth: 0.5, borderRadius: 10, backgroundColor: Color.onPrimary, elevation: 5, marginHorizontal: 20, borderColor: Color.onSecondary }} >
-
-            <View style={{ width: '75%', justifyContent: 'center', paddingVertical: 7 }}>
-
-              <Text style={{ fontSize: 18, fontWeight: 'bold', color: Color.onSecondary }}>{data?.email}</Text>
-            </View>
-          </View>
+          
 
 
 
