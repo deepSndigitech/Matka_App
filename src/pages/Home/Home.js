@@ -60,7 +60,7 @@ const Home = props => {
       setnumber13(setnumber121);
       setnumber12(setnumber1222);
       setRandomNumberbaner(newRandomNumberBann)
-    }, 2000); // 2000 milliseconds = 2 seconds
+    }, 20000); // 2000 milliseconds = 2 seconds
 
     // Cleanup function to clear the interval when the component unmounts
     return () => clearInterval(interval);

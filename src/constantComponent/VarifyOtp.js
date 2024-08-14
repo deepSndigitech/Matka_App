@@ -1,9 +1,10 @@
 import moment from "moment";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ScrollView, TouchableOpacity, Text, View, Dimensions, Image, TextInput, Keyboard, ActivityIndicator, ToastAndroid } from "react-native"
 import Modal from 'react-native-modal';
 import { useSelector } from "react-redux";
 import { APIRequestWithFile, apiRoutes } from "../apiConfig/apiurl";
+import Toast from "react-native-toast-message";
 
 const { height, width } = Dimensions.get('window')
 
@@ -13,6 +14,7 @@ const VarifyOtp = ({ visible, onClose, navigation, email }) => {
     const Color = useSelector(state => state.Theme.Color)
     const [Loading, setLoading] = useState(false)
     const [Loadings, setLoadings] = useState(false)
+    const [seconds, setSeconds] = useState(30);
 
 
     const handleOtpChange = (index, value) => {
@@ -36,51 +38,59 @@ const VarifyOtp = ({ visible, onClose, navigation, email }) => {
     };
 
     const submitOtp = (id) => {
+        if (id) {
+
+            const fd = new FormData();
+
+            fd.append('mobile', email);
+            fd.append('otp', id);
+
+            let config = {
+                url: apiRoutes.verificationForget,
+                method: 'post',
+                body: fd
+            };
+            setLoading(true)
+            APIRequestWithFile(
+                config,
+                res => {
+                    console.log(res, '--@@@@@@@@@-res');
+                    if (res?.status === "success") {
+                        onClose();
+                        setOtp(['', '', '', '']);
+                        navigation.navigate('ConfirmePassword', { "email": email, "token": res?.data?.token })
+                        Toast.show({
+                            text1: res?.message,
+                            type: 'success'
+                        });
 
 
-        const fd = new FormData();
+                    }
+                    else {
+                        Toast.show({
+                            text1: res?.message,
+                            type: 'error'
+                        });
+                    }
+                    // SetSendMessage(mess = res?.data, type = audioFile ? 'audio' : 'image')
+                    setLoading(false);
+                },
+                err => {
+                    console.log(err?.message, '---err');
+                    setLoading(false)
+                    // if (err?.message) {
 
-        fd.append('mobile', email);
-        fd.append('otp', id);
-
-        let config = {
-            url: apiRoutes.verificationForget,
-            method: 'post',
-            body: fd
-        };
-        setLoading(true)
-        APIRequestWithFile(
-            config,
-            res => {
-                console.log(res, '--@@@@@@@@@-res');
-                if (res?.status === "success") {
-                    onClose();
-                    setOtp(['', '', '', '']);
-                    navigation.navigate('ConfirmePassword', { "email": email, "token": res?.data?.token })
-                    Toast.show({
-                        text1: res?.message,
-                        type: 'success'
-                    });
-
-
+                    // }
                 }
-                else {
-                    Toast.show({
-                        text1: res?.message,
-                        type: 'error'
-                    });
-                }
-                // SetSendMessage(mess = res?.data, type = audioFile ? 'audio' : 'image')
-                setLoading(false);
-            },
-            err => {
-                console.log(err?.message, '---err');
-                setLoading(false)
-                // if (err?.message) {
+            );
 
-                // }
-            }
-        );
+        } else {
+            Toast.show({
+                text1: 'Please enter OTP',
+                type: 'error'
+            });
+        }
+
 
 
         // props.navigation.navigate('ConfirmePassword', { "email": email, "otp": id })
@@ -118,10 +128,11 @@ const VarifyOtp = ({ visible, onClose, navigation, email }) => {
                         ToastAndroid.BOTTOM,
                         25,
                         50,
-                      );
+                    );
                     // onClose();
                     setOtp(['', '', '', '']);
-                    
+                    setSeconds(30)
+
 
                 }
                 else {
@@ -145,6 +156,19 @@ const VarifyOtp = ({ visible, onClose, navigation, email }) => {
     }
 
 
+
+    useEffect(() => {
+        // Check if there are remaining seconds
+        if (seconds <= 0) return;
+
+        // Set up an interval that updates the timer every second
+        const interval = setInterval(() => {
+            setSeconds(prevSeconds => prevSeconds - 1);
+        }, 1000);
+
+        // Clear the interval when the component unmounts or when the timer reaches 0
+        return () => clearInterval(interval);
+    }, [seconds]);
 
     return (
         <>
@@ -220,9 +244,9 @@ const VarifyOtp = ({ visible, onClose, navigation, email }) => {
                                 }
                             </TouchableOpacity>
                         </View>
-                        {/* <View style={{ marginTop: 10, alignSelf: 'center', flexDirection: 'row' }}>
-                            <Text style={{ color: Color.onSecondary, fontSize: 12 }}>Resend code in 00:59</Text>
-                        </View> */}
+                        <View style={{ marginTop: 10, alignSelf: 'center', flexDirection: 'row' }}>
+                            <Text style={{ color: Color.onSecondary, fontSize: 12 }}>Resend code in 00:{seconds}</Text>
+                        </View>
 
                         <TouchableOpacity style={{ alignSelf: 'center', marginTop: 30, marginHorizontal: 20, borderRadius: 10, padding: 7, width: '80%', borderWidth: 1, borderColor: Color.onSecondary, justifyContent: 'center' }}
                             onPress={() => submitOtp()} >

@@ -93,7 +93,7 @@ const Support = (props) => {
       setnumber(newRandomNumber);
       setnumber1(newRandomNumberBann);
 
-    }, 2000); // 2000 milliseconds = 2 seconds
+    }, 20000); // 2000 milliseconds = 2 seconds
 
     // Cleanup function to clear the interval when the component unmounts
     return () => clearInterval(interval);

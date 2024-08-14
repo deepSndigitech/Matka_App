@@ -11,7 +11,7 @@ const Privacy_Policy = ({ navigation }) => {
 
   const datas = ["satta matka", "online matka", "online matka app", "satta matta matka", "matka satta", "matka app", "online satta app", "kalyan matka", "satta matka satta matka", "online matka play", "online matka play full rate app", "100 deposit matka app download", "satta king", "online satta play", "trusted online matka app", "kalyan online matka", "satta king gali", "fast withdrawal matka app", "satta company", "best site to play online matka"]
 
-  const imagesData = [require('../../Images/rezeetImg/banner_bg.png'), require('../../Images/rezeetImg/banner_bg1.png'), require('../../Images/rezeetImg/banner_bg2.png'), require('../../Images/rezeetImg/banner_bg3.png'), ]
+  const imagesData = [require('../../Images/rezeetImg/banner_bg.png'), require('../../Images/rezeetImg/banner_bg1.png'), require('../../Images/rezeetImg/banner_bg2.png'), require('../../Images/rezeetImg/banner_bg3.png')]
 
   const [number, setnumber] = useState(0);
   const [number1, setnumber1] = useState(0);
@@ -28,7 +28,7 @@ const Privacy_Policy = ({ navigation }) => {
       setnumber(newRandomNumber);
       setnumber1(newRandomNumberBann);
 
-    }, 2000); // 2000 milliseconds = 2 seconds
+    }, 20000); // 2000 milliseconds = 2 seconds
 
     // Cleanup function to clear the interval when the component unmounts
     return () => clearInterval(interval);

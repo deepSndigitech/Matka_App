@@ -1,5 +1,5 @@
 import moment from "moment";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ScrollView, TouchableOpacity, Text, View, Dimensions, Image, TextInput, Keyboard, ActivityIndicator, ToastAndroid } from "react-native"
 import Modal from 'react-native-modal';
 import { useSelector } from "react-redux";
@@ -13,6 +13,7 @@ const VarifyNumber = ({ visible, onClose, contect, countryCode, setContactVerifi
     const [otp, setOtp] = useState(['', '', '', '']);
     const otpInputRefs = useRef([]);
     const Color = useSelector(state => state.Theme.Color)
+    const [seconds, setSeconds] = useState(30);
 
     const [loading, setloading] = useState(false)
     const [Loadings, setLoadings] = useState(false)
@@ -39,9 +40,7 @@ const VarifyNumber = ({ visible, onClose, contect, countryCode, setContactVerifi
     const submitOtp = async (id) => {
         // setOtpNumber(id);
         setloading(true);
-        console.log('====================================')
-        console.log("", id)
-        console.log('====================================')
+        if(id){
 
         const fd = new FormData();
 
@@ -101,6 +100,16 @@ const VarifyNumber = ({ visible, onClose, contect, countryCode, setContactVerifi
                 // }
             }
         );
+
+        }
+        else{
+            setloading(false)
+            Toast.show({
+                text1: 'Invalid OTP',
+                type: 'error'
+            })
+        }
+       
     }
 
 
@@ -125,6 +134,7 @@ const VarifyNumber = ({ visible, onClose, contect, countryCode, setContactVerifi
                     //     text1: res?.message,
                     //     type: 'success'
                     // });
+                    setSeconds(30)
                     ToastAndroid.showWithGravityAndOffset(
                         res?.message,
                         ToastAndroid.LONG,
@@ -156,6 +166,20 @@ const VarifyNumber = ({ visible, onClose, contect, countryCode, setContactVerifi
         );
 
     }
+
+
+    useEffect(() => {
+        // Check if there are remaining seconds
+        if (seconds <= 0) return;
+
+        // Set up an interval that updates the timer every second
+        const interval = setInterval(() => {
+            setSeconds(prevSeconds => prevSeconds - 1);
+        }, 1000);
+
+        // Clear the interval when the component unmounts or when the timer reaches 0
+        return () => clearInterval(interval);
+    }, [seconds]);
 
 
     return (
@@ -233,9 +257,12 @@ const VarifyNumber = ({ visible, onClose, contect, countryCode, setContactVerifi
                                 }
                             </TouchableOpacity>
                         </View>
+                        <View style={{ marginTop: 10, alignSelf: 'center', flexDirection: 'row' }}>
+                            <Text style={{ color: Color.onSecondary, fontSize: 12 }}>Resend code in 00:{seconds}</Text>
+                        </View>
 
                         <TouchableOpacity style={{ alignSelf: 'center', marginTop: 50, marginHorizontal: 20, borderRadius: 10, padding: 7, width: '80%', borderWidth: 1, borderColor: Color.onSecondary, justifyContent: 'center' }}
-                        // onPress={() => submitOtp()}
+                        onPress={() => submitOtp()}
                         >
                             {loading ?
                                 <ActivityIndicator size="large" color={Color.onSecondary} />
