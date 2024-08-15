@@ -14,7 +14,7 @@ const VarifyOtp = ({ visible, onClose, navigation, email }) => {
     const Color = useSelector(state => state.Theme.Color)
     const [Loading, setLoading] = useState(false)
     const [Loadings, setLoadings] = useState(false)
-    const [seconds, setSeconds] = useState(30);
+    const [seconds, setSeconds] = useState(0);
 
 
     const handleOtpChange = (index, value) => {
@@ -155,6 +155,10 @@ const VarifyOtp = ({ visible, onClose, navigation, email }) => {
 
     }
 
+    useEffect(() => {
+ setSeconds(30)
+    }, [])
+    
 
 
     useEffect(() => {

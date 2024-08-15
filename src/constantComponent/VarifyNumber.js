@@ -13,7 +13,7 @@ const VarifyNumber = ({ visible, onClose, contect, countryCode, setContactVerifi
     const [otp, setOtp] = useState(['', '', '', '']);
     const otpInputRefs = useRef([]);
     const Color = useSelector(state => state.Theme.Color)
-    const [seconds, setSeconds] = useState(30);
+    const [seconds, setSeconds] = useState(0);
 
     const [loading, setloading] = useState(false)
     const [Loadings, setLoadings] = useState(false)
@@ -77,10 +77,10 @@ const VarifyNumber = ({ visible, onClose, contect, countryCode, setContactVerifi
                     // });
                     setOtp(['', '', '', '']);
                     
-                    Toast.show({
-                        text1: res?.message,
-                        type: 'success'
-                    });
+                    // Toast.show({
+                    //     text1: res?.message,
+                    //     type: 'success'
+                    // });
 
                 }
                 else {
@@ -113,6 +113,10 @@ const VarifyNumber = ({ visible, onClose, contect, countryCode, setContactVerifi
     }
 
 
+    useEffect(() => {
+  setSeconds(30)
+    }, [])
+    
     const reSendCode = () => {
 
         const fd = new FormData();

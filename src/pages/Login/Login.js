@@ -142,10 +142,10 @@ const Login = ({ navigation }) => {
       .then(res => {
         console.log("res@@@@@@@", res?.data);
         if (res?.data?.status === "success") {
-          Toast.show({
-            text1: res?.data?.message,
-            type: 'success'
-          });
+          // Toast.show({
+          //   text1: res?.data?.message,
+          //   type: 'success'
+          // });
           dispatch(setLogin(true))
           AsyncStorage.setItem('token', res?.data?.data?.token).catch(err => console.log(err));
           navigation.navigate('Sidebar');
